@@ -12,7 +12,7 @@ import streamlit as st
 
 models = ["ca_bsc_demo_trf","ca_core_news_md","ca_core_news_trf"]
 st.set_page_config(page_title="CA Spacy demo", page_icon="aina_small.jpg", layout='wide', initial_sidebar_state='auto')
-default_text = "Aquest dissabte, Francesc Solé va arribar a la meta a Ordino com el guanyador del Ultra Trail d'Andorra després de 170km amb un desnivell altitudinal de 13 500 metres, en un temps de 31 hores i 9 minuts.   "
+default_text = "El Futbol Club Barcelona, ​​conegut popularment com a Barça, és una entitat poliesportiva amb seu a Barcelona."
 st.title("Demo de les pipelines  d'Spacy 3.4 per al català")
 st.subheader("*Trieu un model a la dreta*")
 visualizers = ["ner", "similarity", "tokens","parser", "textcat"]
