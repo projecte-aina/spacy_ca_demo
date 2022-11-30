@@ -1,8 +1,30 @@
-# spacy_ca_demo
-Demo comparativo modelos spacy
+## Prerequisites
 
-Instalem els models que hi han als requirements.txt,
+Make
 
-y s'aixeca aixi:
+[Docker](https://docs.docker.com/engine/install/ubuntu/)
 
-streamlit run streamlit_app.py --server.port 8081 --theme.font serif --browser.serverPort 8081 --browser.serverAddress http://aina.bsc.es
+[Docker compose](https://docs.docker.com/compose/install/)
+
+
+### Setup local environment
+Create and activate a python 3.8 virtual environment
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the requirements in python3.8
+
+```bash
+pip install -r requirements.txt
+```
+
+Run demo with
+```bash
+LANG=ca streamlit run streamlit_app.py
+```
+
+## Deploy via docker compose
+
+To deploy this project run
+
+```bash
+make deploy
+```
