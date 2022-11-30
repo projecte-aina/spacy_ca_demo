@@ -17,8 +17,10 @@ st.set_page_config(page_title="CA Spacy demo", header_title="Spacy", layout='wid
     'Report a bug': 'https://github.com/projecte-aina/spacy_ca_demo/issues',
     'About': None})
 default_text = "El Futbol Club Barcelona, ​​conegut popularment com a Barça, és una entitat poliesportiva amb seu a Barcelona."
-st.title("Demo de les pipelines  d'Spacy 3.4 per al català")
-st.subheader("*Trieu un model a la dreta*")
+
+st.markdown("## Demo de les pipelines  d'Spacy 3.4 per al català")
+st.markdown("#### *Trieu un model a l'esquerra*")
+
 visualizers = ["ner", "similarity", "tokens","parser", "textcat"]
 similarity_texts = ('gos','gat')
 spacy_streamlit.visualize(models, default_text, visualizers, similarity_texts=('gos','gat'), show_visualizer_select=True,sidebar_title="Visualització models Spacy-AINA",sidebar_description="Es pot triar el model i la funcionalitat de la visualització", demo_type=Demotype.AINA)
