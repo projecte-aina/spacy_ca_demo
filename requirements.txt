@@ -1,6 +1,7 @@
 git+https://github.com/TeMU-BSC/spacy-streamlit.git
 https://github.com/TeMU-BSC/streamlit/releases/download/1.14.1-aina/streamlit-1.14.1-py2.py3-none-any.whl
 https://huggingface.co/projecte-aina/ca_bsc_demo_trf/resolve/main/ca_bsc_demo_trf-any-py3-none-any.whl
+https://huggingface.co/projecte-aina/ca_bsc_demo_md/resolve/main/ca_bsc_demo_md-any-py3-none-any.whl
 https://huggingface.co/spacy/ca_core_news_md/resolve/main/ca_core_news_md-any-py3-none-any.whl
 https://huggingface.co/spacy/ca_core_news_trf/resolve/main/ca_core_news_trf-any-py3-none-any.whl
 

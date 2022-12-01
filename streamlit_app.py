@@ -11,7 +11,7 @@ import spacy_streamlit
 import streamlit as st
 from spacy_streamlit.util import Demotype
 
-models = ["ca_bsc_demo_trf","ca_core_news_md","ca_core_news_trf"]
+models = ["ca_bsc_demo_trf", "ca_bsc_demo_md", "ca_core_news_md","ca_core_news_trf"]
 st.set_page_config(page_title="CA Spacy demo", header_title="Spacy", layout='wide', initial_sidebar_state='auto', menu_items={
     'Get Help': 'https://huggingface.co/projecte-aina',
     'Report a bug': 'https://github.com/projecte-aina/spacy_ca_demo/issues',
@@ -23,5 +23,6 @@ st.markdown("#### *Trieu un model a l'esquerra*")
 
 visualizers = ["ner", "similarity", "tokens","parser", "textcat"]
 similarity_texts = ('gos','gat')
-spacy_streamlit.visualize(models, default_text, visualizers, similarity_texts=('gos','gat'), show_visualizer_select=True,sidebar_title="Visualització models Spacy-AINA",sidebar_description="Es pot triar el model i la funcionalitat de la visualització", demo_type=Demotype.AINA)
+spacy_streamlit.visualize(models, default_text, visualizers, similarity_texts=('gos','gat'), show_visualizer_select=True,sidebar_title="Visualització models Spacy-AINA",sidebar_description="Es pot triar el model i la funcionalitat de la visualització", demo_type=Demotype.AINA,
+                          models_download_name_links=[{"name":"ca_bsc_demo_trf", "link":"https://huggingface.co/projecte-aina/ca_bsc_demo_trf/"}, {"name": "ca_bsc_demo_md", "link":"https://huggingface.co/projecte-aina/ca_bsc_demo_md"}])
 #streamlit run streamlit_app.py --server.port 8081 --theme.font serif --browser.serverPort 8081 --browser.serverAddress http://aina.bsc.es

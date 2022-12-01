@@ -12,7 +12,8 @@ COPY .streamlit /usr/src/app/.streamlit
 
 COPY requirements.txt streamlit_app.py ./
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN python -m pip install --upgrade pip
+RUN pip install --no-cache-dir  --upgrade -r requirements.txt
 
 
 ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port", "8081", "--browser.serverAddress", "0.0.0.0"]
